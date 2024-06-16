@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>EnvironmentTracker</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="nbitem"><a href="#aboutproject"><div class="co2">ABOUT</div></a></div>
+        <div class="nbitem"><a href="#project"><div class="co2">CO2</div></a></div>
+      </div>
+      <div class="styletext">
+        <img src="../static/styletext.png" id="image1">
+      </div>
+      <div class="intro">
+        <div class="introvideo">
+          <video  id="video1" loop autoplay muted>
+            <source src="../static/earthrotating.mp4">
+          </video>
+        </div>
+        <div class="introtext">
+          <div class="text">
+            <div id="hinditext">
+              "एक पृथ्वी, एक परिवार" का मतलब है कि हम सभी एक ही ग्रह पर रहते हैं और एक बड़े परिवार का हिस्सा हैं। इसका संदेश है कि हमे अपने बीच की सीमाओं को मिटाकर आपसी समझ, सहयोग, और एकता को बढ़ावा देना चाहिए। हमें पर्यावरण की सुरक्षा, संसाधनों का न्यायसंगत वितरण, और सभी प्राणियों के प्रति करुणा का पालन करना चाहिए। यह विचारधारा बताती है कि हमारे कार्यों का प्रभाव पूरी पृथ्वी पर पड़ता है, इसलिए हमें एक साथ मिलकर काम करना होगा ताकि हम एक सुरक्षित और समृद्ध भविष्य सुनिश्चित कर सकें।
+            </div>
+            <div id="englishtext">
+              "One Earth, One Family" means that we all live on the same planet and are part of a larger family. Its message is to dissolve our boundaries and promote mutual understanding, cooperation, and unity. We should protect the environment, ensure equitable distribution of resources, and practice compassion towards all beings. This ideology conveys that our actions impact the entire Earth, so we must work together to ensure a safe and prosperous future.
+            </div>
+          </div>
+          <div class="translate">
+            <div id="hindi">HIN</div>
+            <div id="english">ENG</div>
+          </div>
+        </div>
+      </div>
+      <div class="break"></div>
+      <div class="about" id="about1" data-aos="fade-up">
+        <div class="divimg">
+          <img src="{{url_for('static', filename='fishwater.jpg')}}" id="divimgimg">
+        </div>
+        <div class="divtxt">
+          DIRTY WATER
+          <br><br>
+          CO2 in air pollution significantly impacts water habitats. Increased atmospheric CO2 levels lead to ocean acidification, where CO2 dissolves in seawater forming carbonic acid. This acidification affects marine life, especially organisms with calcium carbonate shells, such as corals and some shellfish, making it harder for them to form and maintain their shells. Additionally, higher CO2 levels contribute to global warming, causing ocean temperatures to rise. Warmer waters disrupt marine ecosystems, affect species distribution, and lead to coral bleaching, which devastates coral reefs and the biodiversity they support. Overall, the increase in CO2 has profound and detrimental effects on water habitats, threatening the health and stability of aquatic ecosystems.
+        </div>
+      </div>
+      <div class="about" id="about2" data-aos="fade-up">
+        <div class="divimg">
+          <img src="{{url_for('static', filename='busytraffic.jpg')}}" id="divimgimg">
+        </div>
+        <div class="divtxt">
+          BUSY TRAFFIC
+          <br><br>
+          Heavy traffic is a major source of CO2 emissions. The exhaust from countless vehicles releases significant amounts of carbon dioxide into the atmosphere, contributing to air pollution and climate change. This increased CO2 not only affects air quality but also accelerates global warming, impacting both terrestrial and aquatic ecosystems. Rising temperatures and ocean acidification harm marine life, disrupt weather patterns, and threaten biodiversity. To mitigate these harmful emissions, it is essential to reduce traffic congestion, promote public transportation, and adopt cleaner, more sustainable transportation methods.
+        </div>
+      </div>
+      <div class="about" id="about3" data-aos="fade-up">
+        <div class="divimg">
+          <img src="{{url_for('static', filename='clearsky.jpg')}}" id="divimgimg">
+        </div>
+        <div class="divtxt">
+          CLEAR SKY
+          <br><br>
+          Reducing CO2 emissions is crucial for obtaining clear skies and combating climate change. Lower CO2 levels lead to decreased air pollution, resulting in clearer, healthier skies. With fewer greenhouse gases trapping heat in the atmosphere, temperatures stabilize, reducing the frequency of extreme weather events like storms and hurricanes. Additionally, decreasing CO2 emissions slows down the process of global warming, preserving the delicate balance of ecosystems and protecting biodiversity. By prioritizing sustainable practices and transitioning to renewable energy sources, we can pave the way for clearer skies and a brighter, more sustainable future.
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="articleimg">
+          <img src="{{url_for('static', filename='pollution.jpg')}}" class="articleimg">
+        </div>
+        <div class="imgcontainer"> 
+          <img src="{{url_for('static', filename='textbg.jpg')}}" class="articletxtbg">
+          <div class="articletxt">Predicting future CO2 emissions using machine learning can play a pivotal role in reducing air pollution. By analyzing historical data and current trends, ML algorithms can forecast future emission levels with greater accuracy. Armed with this knowledge, policymakers and industries can implement targeted strategies to mitigate emissions proactively. Machine learning models can identify patterns and factors influencing CO2 emissions, enabling the development of more effective pollution control measures and sustainable policies. Ultimately, leveraging machine learning in forecasting CO2 emissions empowers us to take proactive steps towards reducing air pollution and mitigating the impacts of climate change.</div>        
+        </div>
+      </div>
+
+      <a href="{{url_for('prediction')}}" id="project"><div class="app">CO2 PREDICTOR</div></a>
+
+      <div class="footer" id="aboutproject">
+        <img src="{{url_for('static', filename='footer.png')}}" id="footerimg">
+        <div class="footercontent">
+          <div class="logo">
+            <div class="logohold"><img src="{{url_for('static',filename='htmllogo.png')}}" class="logoholdpic"></div>
+            <div class="logohold"><img src="{{url_for('static',filename='csslogo.jpeg')}}" class="logoholdpic"></div>
+            <div class="logohold"><img src="{{url_for('static',filename='jslogo.png')}}" class="logoholdpic"></div>
+            <div class="logohold"><img src="{{url_for('static',filename='chartjslogo.png')}}" class="logoholdpic"></div>
+            <div class="logohold"><img src="{{url_for('static',filename='matplotliblogo.jpeg')}}" class="logoholdpic"></div>
+          </div>
+          <div class="logo">
+            <div class="logohold"><img src="{{url_for('static',filename='pythonlogo.jpeg')}}" class="logoholdpic"></div>
+            <div class="logohold"><img src="{{url_for('static',filename='numpylogo.png')}}" class="logoholdpic"></div>
+            <div class="logohold"><img src="{{url_for('static',filename='pandaslogo.jpeg')}}" class="logoholdpic"></div>
+            <div class="logohold"><img src="{{url_for('static',filename='scikitlogo.png')}}" class="logoholdpic"></div>
+            <div class="logohold"><img src="{{url_for('static',filename='flasklogo.jpeg')}}" class="logoholdpic"></div>
+          </div>
+          <div class="profile">
+            <div class="links">
+              <a href="https://github.com/codesdred"><div class="linkpic"><img src="{{url_for('static',filename='githublogo.png')}}" class="linkholdpic"></div></a>
+              <a href="https://www.linkedin.com/in/dashsanjeeb/"><div class="linkpic"><img src="{{url_for('static',filename='linkedinlogo.png')}}" class="linkholdpic"></div></a>
+            </div>
+            <div class="owner">
+              &copy; &nbsp;<font color="black">Sanjeeb Dash</font>&nbsp; Aspiring Software Developer!
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../static/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 1500,
+      });
+    </script>
+  </body>
+  
+</html>
