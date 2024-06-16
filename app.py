@@ -90,5 +90,3 @@ def prediction():
     else:
         return render_template("form.html", country = '_', year = '_', val = '_', type="line")
 
-if __name__ == '__main__':
-    app.run(debug=False)
