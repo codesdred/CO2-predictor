@@ -4,6 +4,7 @@
 			"src":"./asgi.py",
 			"use":"@vercel/python",
 			"config": {
+					"runtime":"python",
         				"installCommand": "pip install -r requirements.txt --no-deps"
       				  }
 		}
