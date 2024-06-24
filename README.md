@@ -11,5 +11,5 @@
    All required packages will be installed based on your Python version.
    <br>
    
-5. Now run `python wsgi.py`
+5. Now run `python asgi.py`
 6. Flask application will start in the localhost.
