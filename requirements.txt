@@ -1,4 +1,4 @@
-Flask==3.0.3 --no-deps
-scikit-learn==1.4.2 --no-deps
-numpy==1.26.4 --no-deps
-pandas==2.2.2 --no-deps
+Flask==3.0.3 --no-dependencies
+scikit-learn==1.4.2 --no-dependencies
+numpy==1.26.4 --no-dependencies
+pandas==2.2.2 --no-dependencies
