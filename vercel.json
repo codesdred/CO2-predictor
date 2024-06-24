@@ -1,9 +1,8 @@
 {
 	"builds": [
 		{
-			"src":"./index.py",
-			"use":"@vercel/python",
-			"config":{"runtime":"python"}
+			"src":"./asgi.py",
+			"use":"@vercel/python"
 		}
 	],
 	"routes": [
